@@ -1,0 +1,30 @@
+# .gitlab-ci.yml
+
+estágios:
+  - build
+  - test
+  - deploy
+
+variáveis:
+  # Defina variáveis globais aqui
+
+antes_do_script:
+  # Comandos a serem executados antes de cada job
+
+buildar:
+  stage: build
+  script:
+    - echo "Construindo o projeto"
+    # Adicione os comandos para construir o seu projeto
+
+testar:
+  stage: test
+  script:
+    - echo "Executando testes"
+    # Adicione os comandos para rodar os testes
+
+implantar:
+  stage: deploy
+  script:
+    - echo "Implantando no ambiente de produção"
+    # Adicione os comandos para implantar a sua aplicação
