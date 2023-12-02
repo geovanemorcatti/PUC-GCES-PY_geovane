@@ -28,3 +28,9 @@ implantar:
   script:
     - echo "Implantando no ambiente de produção"
     # Adicione os comandos para implantar a sua aplicação
+producao:
+  stage: deploy
+  script:
+    - echo "Implantando no ambiente de produção"
+  only:
+    - master
